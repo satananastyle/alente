@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  li {
+    display: block;
+
+    border: 1px solid $gray;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+
+@include hover;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  svg {
+    fill: $gray;
+  }
+}
+
+.social--footer {
+  li {
+    border: 1px solid $brown;
+  }
+
+  svg {
+    fill: $brown;
+  }
+}

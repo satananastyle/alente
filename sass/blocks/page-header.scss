@@ -1,0 +1,168 @@
+.page-header__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px calc(50% - 473px);
+
+  &--bottom {
+    flex-wrap: nowrap;
+
+    color: white;
+
+    background-color: black;
+  }
+}
+
+.page-header__block--top {
+  select {
+    padding: 5px 20px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: underline;
+
+    background-image: url("img/svg/icon-location.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 17px;
+    border: none;
+
+@include hover;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $brown;
+
+      border: none;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+
+@include hover;
+
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
+
+    svg {
+      margin-right: 4px;
+
+      transition: 0.3s;
+
+      fill: $gray;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: $brown;
+    }
+  }
+}
+
+.page-header__call {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.page-header__user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    margin-right: 60px;
+
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a span {
+    font-size: 15px;
+    line-height: 18px;
+
+    border-bottom: 1px dashed black;
+  }
+
+  a:hover span,
+  a:focus span {
+    border-bottom: 1px dashed $brown;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+
+  cursor: default;
+
+  img {
+    margin-right: 15px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  span {
+    display: block;
+
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+
+.page-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    margin-left: 25px;
+    padding: 5px 0;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+@include hover;
+  }
+
+  a.active {
+    border-bottom: 1px dashed white;
+  }
+
+  a:hover,
+  a:focus {
+    color: $brown;
+  }
+
+  a.active:hover,
+  a.active:focus {
+    border-bottom: 1px dashed $brown;
+  }
+}
