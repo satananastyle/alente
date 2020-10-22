@@ -30,6 +30,10 @@
   svg {
     fill: $gray;
   }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .social--footer {
@@ -41,5 +45,9 @@
 
   svg {
     fill: $brown;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: flex;
   }
 }
