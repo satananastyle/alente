@@ -12,43 +12,22 @@
 
     background-color: black;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 12px 20px;
+  }
 }
 
 .page-header__block--top {
-  select {
-    padding: 5px 20px;
-
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    text-decoration: underline;
-
-    background-image: url("img/svg/icon-location.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: auto 17px;
-    border: none;
-
-@include hover;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $brown;
-
-      border: none;
-    }
-  }
-
   a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
 
     font-weight: 600;
 
 @include hover;
-
     &:hover,
     &:focus {
       color: $brown;
@@ -64,8 +43,29 @@
 
     &:hover svg,
     &:focus svg {
+      transition: 0.3s;
+
       fill: $brown;
     }
+  }
+}
+
+.page-header__city {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+@include hover;
+
+  span {
+    margin-right: 4px;
+
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brown;
   }
 }
 
@@ -107,6 +107,7 @@
 .page-header__logo {
   display: flex;
   align-items: center;
+  min-width: 193px;
   margin-right: auto;
 
   font-size: 17px;
@@ -135,7 +136,6 @@
 .page-header__nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
 
   a {
@@ -149,7 +149,12 @@
     text-decoration: none;
     letter-spacing: 1px;
 
-@include hover;
+    @include hover;
+
+    @media (max-width: $tablet-width) {
+      font-size: 13px;
+      line-height: 17px;
+    }
   }
 
   a.active {
