@@ -538,7 +538,7 @@ button {
   align-items: center;
 }
 .page-header__nav a {
-  margin-left: 20px;
+  margin-left: 25px;
   padding: 5px 0;
   font-weight: 600;
   font-size: 15px;
@@ -568,6 +568,142 @@ button {
 .page-header__nav a.active:hover,
 .page-header__nav a.active:focus {
   border-bottom: 1px dashed #b98348;
+}
+
+.page-footer {
+  margin-top: auto;
+}
+
+.page-footer__top-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calc(50% - 473px);
+  background-color: #f6f6f6;
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.page-footer__nav {
+  padding: 45px 0;
+}
+.page-footer__nav a {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  color: #b98348;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.page-footer__nav a:hover, .page-footer__nav a:focus {
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.page-footer__nav a:active {
+  opacity: 0.9;
+}
+.page-footer__nav a:not(:hover), .page-footer__nav a:not(:focus) {
+  transition: 0.3s;
+}
+.page-footer__nav a:hover, .page-footer__nav a:focus {
+  opacity: 0.8;
+}
+
+.page-footer__nav-clothes {
+  margin: 0;
+  padding: 45px 70px;
+  list-style: none;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 12%;
+  -moz-column-gap: 12%;
+  column-gap: 12%;
+  border-right: 1px solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+}
+.page-footer__nav-clothes li {
+  width: 100%;
+  margin-right: 16px;
+  margin-bottom: 10px;
+}
+.page-footer__nav-clothes a {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+.page-footer__nav-clothes a:hover, .page-footer__nav-clothes a:focus {
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.page-footer__nav-clothes a:active {
+  opacity: 0.9;
+}
+.page-footer__nav-clothes a:not(:hover), .page-footer__nav-clothes a:not(:focus) {
+  transition: 0.3s;
+}
+.page-footer__nav-clothes a:hover, .page-footer__nav-clothes a:focus {
+  color: #b98348;
+}
+
+.page-footer__contacts {
+  padding: 45px 0;
+}
+.page-footer__contacts h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.page-footer__contacts p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.page-footer__contacts address {
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+.page-footer__contacts a:hover, .page-footer__contacts a:focus {
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.page-footer__contacts a:active {
+  opacity: 0.9;
+}
+.page-footer__contacts a:not(:hover), .page-footer__contacts a:not(:focus) {
+  transition: 0.3s;
+}
+.page-footer__contacts a:hover, .page-footer__contacts a:focus {
+  opacity: 0.8;
+}
+.page-footer__contacts a[href="tel:+74992401001"] {
+  font-weight: bold;
+}
+.page-footer__contacts a[href="mailto:info@my-suit.ru"] {
+  color: #b98348;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  padding: 15px calc(50% - 473px);
+  font-size: 12px;
+  line-height: 30px;
+  color: #c2c2c2;
+  background-color: #eeeeee;
 }
 
 .social {
@@ -606,6 +742,9 @@ button {
   fill: #c2c2c2;
 }
 
+.social--footer {
+  margin-top: 40px;
+}
 .social--footer li {
   border: 1px solid #b98348;
 }
